@@ -1,9 +1,11 @@
-const valorX = document.getElementById('numberX');
-const valorY = document.getElementById('numberY');
+var valorX = document.getElementById('numberX');
+var valorY = document.getElementById('numberY');
 const form = document.getElementById('form-calcular');
 
 function calcular(numero) {
-    numero = valorX.value > valorY.value;
+    var numero1 = parseInt(valorX.value);
+    var numero2 = parseInt(valorY.value)
+    numero = numero1 > numero2;
     return numero;
 }
 
